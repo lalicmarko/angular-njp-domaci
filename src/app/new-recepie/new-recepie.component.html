@@ -1,0 +1,19 @@
+<div class="recipes-component">
+  <h2>Dodajte novi recept</h2><hr>
+    Ime Recepta: <input type="text" [(ngModel)]="newPrName">
+  <table>
+    <thead>
+      <tr mat-row>
+        <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of products ;index as i">
+        <td>{{ item.name }}</td>
+        <td><input #selector type="checkbox" [(ngModel)]="item.check"></td>
+      </tr>
+    </tbody>
+  </table>
+    <button (click)="add()">Dodaj</button>
+</div>
+

@@ -1,0 +1,42 @@
+/* NavComponent's private CSS styles */
+.mynav {
+  height: max-content;
+  background: gray;
+  padding: 10px;
+}
+h1 {
+  font-size: 1.2em;
+  color: #fffffb;
+  /*background-color: #607D8B;*/
+  width: 500px;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 2em;
+  width: auto;
+  margin: 0 auto;
+  background-color: red;
+}
+nav {
+  /*background-color: red;*/
+  width: 500px;
+  margin: 0 auto;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607d8b;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #cfd8dc;
+}
+nav a.active {
+  color: #039be5;
+}

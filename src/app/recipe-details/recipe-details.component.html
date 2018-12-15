@@ -1,0 +1,19 @@
+<div class="recipe-details-component">
+  <h2> Detalji o receptu: {{ recipe.name }}</h2> <hr>
+  <table>
+    <thead>
+    <tr mat-row>
+      <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of recipe.products ;index as i">
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td><input #selector type="checkbox" [(ngModel)]="item.check"></td>
+      </tr>
+    </tbody>
+
+  </table>
+  <button (click)="save()">Save</button>
+</div>

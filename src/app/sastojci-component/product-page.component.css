@@ -1,0 +1,26 @@
+.sastojci-component {
+  background-color: lightgray;
+  padding: 10px;
+}
+h2 {
+  font-size: x-large;
+  font-family: Calibri, serif;
+  font-style: italic;
+  margin-left: 20px;
+}
+table {
+  margin-left: 40px;
+  width: 300px;
+  background-color: white;
+}
+/*table, th , td  {*/
+    /*border: 1px solid grey;*/
+    /*border-collapse: collapse;*/
+    /*padding: 5px;*/
+  /*}*/
+/*table tr:nth-child(odd) {*/
+    /*background-color: #f1f1f1;*/
+  /*}*/
+/*table tr:nth-child(even) {*/
+  /*background-color: #ffffff;*/
+  /*}*/

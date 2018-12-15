@@ -1,0 +1,21 @@
+<div class="sastojci-component">
+    <h2>Sastojci</h2><hr>
+  <table mat-table class="mat-elevation-z8">
+    <thead>
+      <tr mat-row>
+          <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of products ;index as i">
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+      </tr>
+    </tbody>
+  </table>
+    <br>
+  <div>
+    Novi sastojak:<input type="text" [(ngModel)]="newPrName">
+    <button (click)="add()">Dodaj</button> <span class="mat-error" *ngIf="errMessage"> {{ errMessage }}</span>
+  </div>
+</div>

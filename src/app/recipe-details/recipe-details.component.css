@@ -1,0 +1,32 @@
+h2 {
+  font-size: x-large;
+  font-family: Calibri, serif;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+.recipe-details-component {
+  background-color: lightgray;
+  padding: 10px;
+}
+table {
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+table, th , td  {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+  table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+  table tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  button {
+    margin-left: 30px;
+    width: 100px;
+  }

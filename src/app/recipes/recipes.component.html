@@ -1,0 +1,10 @@
+<div class="recipes-component">
+  <h2>Recepti</h2><hr>
+  <ul class="recipes-list">
+    <li *ngFor="let rec of recipes">
+      <a routerLink="/recipes/{{rec.id}}">
+        <span class="badge">{{rec.id}}</span> {{rec.name}}
+      </a>
+    </li>
+  </ul>
+</div>
